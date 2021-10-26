@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Calculadora IMC</h1>
+        </header>
+        <main>
+            <label>
+                Informe sua altura em Metros:
+                <input id="input-height" placeholder="Exemplo: 1.70">
+            </label>
+            <label>
+                Informe seu peso em Kilos:
+                <input id="input-weight" placeholder="Exemplo: 70">
+            </label>
+            <button id="button" type="button">Calcule seu IMC</button>
+            <section>
+                <p>Seu IMC é de <b id="calculated-imc">0</b> Kg/m²</p>
+                <p id="imc-text">Você está no seu Peso ideal.</p>
+                <p>Para sua altura, você deve: <b id="weight-status">Perder</b> <b id="weight-value">0</b> Kg</p>
+            </section>
+        </main>
+    </div>
+</body>
+<script src="./scripts.js"></script>
+</html>
